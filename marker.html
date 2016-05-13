@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibHVjZ3JheSIsImEiOiJjaWxpM3VjcmsydHVudjZtMHR0eGYzMTd0In0.R0Hi7W-vRakpM2xmMAXbzw';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/lucgray/cili41xp900ad9gm3p45c6zxr',
+    zoom: 13,
+    center: [-89.40123019999999, 43.0730517]
+});
+
+
+// Markers
+map.on('style.load', function () {
+    map.addSource("markers", {
+        "type": "geojson",
+        "data": {
+            "type": "FeatureCollection",
+            "features": [
+	{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.5051636174, 43.0651575979 ]
+  },
+  "properties" : {
+    "title" : "machine gun ammo",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.3460928495, 43.0605877547 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.40314, 43.07604 ]
+  },
+  "properties" : {
+    "title" : "machine gun ammo",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.51238, 43.0158 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.44569, 43.04912 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.41773, 43.08796 ]
+  },
+  "properties" : {
+    "title" : "machine gun ammo",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.42381, 43.06543 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.52575, 43.092 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.5789062604, 42.7980307024 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.49235, 43.00057 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.2857863088, 43.0990188251 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.3843655306, 43.0588344011 ]
+  },
+  "properties" : {
+    "title" : "machine gun ammo",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.5167997949, 43.004105288 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.4358686736, 43.0680617478 ]
+  },
+  "properties" : {
+    "title" : "machine gun ammo",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.52035, 43.01888 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.5150889643, 43.0468977056 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.27146, 42.93325 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.4615274223, 43.049948669 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.4343449388, 43.0243688608 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.5271, 43.09244 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.54501, 43.28203 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.4879950802, 43.0027946093 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.42324, 43.07655 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.5070662818, 43.0709343347 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.4919718717, 43.059557394 ]
+  },
+  "properties" : {
+    "title" : "machine gun ammo",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.4990516442, 43.0711663911 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.48919232, 43.0425775051 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.5172598772, 43.0510342587 ]
+  },
+  "properties" : {
+    "title" : "machine gun ammo",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.4985676568, 43.0127343898 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.44039, 43.08184 ]
+  },
+  "properties" : {
+    "title" : "machine gun ammo",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.2558432, 43.0933211 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.55846, 43.27781 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.42662, 43.08138 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.5163582, 43.0149765 ]
+  },
+  "properties" : {
+    "title" : "transistors",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.5149699412, 43.1032941677 ]
+  },
+  "properties" : {
+    "title" : "machine gun ammo",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.3848677301, 43.071341351 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.3161262142, 43.0796409229 ]
+  },
+  "properties" : {
+    "title" : "machine gun ammo",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.4273109514, 43.0815405604 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+},
+{
+  "type" : "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [ -89.4615159463, 43.020790508 ]
+  },
+  "properties" : {
+    "title" : "robot arm",
+    "marker-symbol" : "park"
+  }
+}
+
+
+            ]
+        }
+    });
+
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        
+        "layout": {
+            "icon-image": "{marker-symbol}-15",
+            "text-field": "{title}",
+            "text-font": ["Joystix Monospace"]
+
+        }
+    });
+});
+</script>
+
+</body>
+</html>
